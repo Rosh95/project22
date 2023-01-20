@@ -15,7 +15,7 @@
           <div class="goods_box" id="goods">
             <div class="menu">
               <input type="text" placeholder="Поиск" class="search" />
-              <button class="add btn btn-success" data-bs-toogle="modal" data-bs-target="#exampleModal">&#10010;</button>
+              <button class="add btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">&#10010;</button>
             </div>
             <div class="table-responsive">
               <table class="goods table mt-3" id="table1">
@@ -69,6 +69,12 @@
           </div>
           <div class="modal-body">
             <label for="goods_name" class="form_label">Название товара</label>
+            <input type="text" class="form-control mb-3" id="goods_name" maxlength="40" />
+            <label for="goods_price" class="form_label">Цена</label>
+            <input type="text" class="form-control mb-3" id="goods_price" />
+            <label for="goods_count" class="form_label">Количество</label>
+            <input type="text" class="form-control mb-3" id="goods_count" min="1" value="1" />
+            <button type="submit" class="add btn btn-success">Сохранить</button>
           </div>
         </div>
       </div>
